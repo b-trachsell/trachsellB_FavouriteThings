@@ -36,9 +36,10 @@
             let panel = theTemplate.cloneNode(true),
                 memberInfo = panel.firstElementChild.children;
 
-            memberInfo[0].textContent = info[person].Title;
-            memberInfo[1].textContent = info[person].Description;
-            memberInfo[2].querySelector('img').src = `images/${info[person].Image}`;
+            
+            memberInfo[0].querySelector('img').src = `images/${info[person].Image}`;
+            memberInfo[1].textContent = info[person].Title;
+            memberInfo[2].textContent = info[person].Description;
             memberInfo[3].querySelector('a').href= info[person].Link;
             memberInfo[3].querySelector('a').textContent = info[person].link_Text;
             
@@ -50,7 +51,6 @@
 
         })
         
-        debugger;
     }
     getData();
 }) ()

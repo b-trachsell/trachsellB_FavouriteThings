@@ -1,8 +1,22 @@
 body{
     color:$main-color;
     font-size: $main-size;
-
 }
+
+main{
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 p{
     color:$body-color;
+}
+img{
+    width:$image-width;
 }
