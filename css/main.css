@@ -1,1 +1,1 @@
-body{color:blue;font-size:16px}main{justify-content:center}section{display:flex;flex-direction:column;justify-content:center;align-items:center}p{color:red}img{width:250px}
+body{color:blue;font-size:16px;text-align:center}main{display:flex;flex-direction:column;align-items:center}section{display:flex;flex-direction:column;justify-content:center;align-items:center}p{color:red;visibility:hidden}img{width:250px;border-radius:10px;cursor:pointer}

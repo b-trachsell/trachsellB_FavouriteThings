@@ -1,10 +1,13 @@
 body{
     color:$main-color;
     font-size: $main-size;
+    text-align: center;
 }
 
 main{
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section{
@@ -16,7 +19,12 @@ section{
 
 p{
     color:$body-color;
+    visibility: hidden;
 }
+
+
 img{
     width:$image-width;
+    border-radius: 10px;
+    cursor: pointer;
 }
