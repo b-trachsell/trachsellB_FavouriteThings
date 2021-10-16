@@ -1,8 +1,30 @@
 body{
     color:$main-color;
     font-size: $main-size;
-
+    text-align: center;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 p{
     color:$body-color;
+    visibility: hidden;
+}
+
+
+img{
+    width:$image-width;
+    border-radius: 10px;
+    cursor: pointer;
 }
