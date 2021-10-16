@@ -55,7 +55,6 @@
             //put the virtual panel into the team section of html
             //load the junk in here, and load it to the html
             
-            panel.firstElementChild.classList.add (person);
             theTeam.appendChild(panel);
             
         })
@@ -66,18 +65,26 @@
     
         //when you clicky the image..
        let clickedSection = (this.parentElement);
+
+
        //set what you clicked into a thing
+       let sections = (theTeam.children);
+       
+       
        let bits = (clickedSection.querySelectorAll("p"));
        //take all the ps out of what you clicked
-
        if(bits[0].style.visibility == "hidden"){
            //check the first p and see if you can see it
-           //just realising I should have done all of this as a class called hidden instead of style.visibility but whatev i guess
+           //just realising I should have done all of this completley differently
+
+           
+           
              bits.forEach(bit =>
                 //and make every p visible
              bit.style.visibility = "visible");
        }
        else {
+           //click again to hide
              bits.forEach(bit =>
             //and make every p hidden
              bit.style.visibility = "hidden");
@@ -91,3 +98,11 @@
 
     getData();
 }) ();
+
+//If I were to do this again, I would Either
+// Use a class to add hidden and visible, so they don't have style = visibility:hidden in the html
+// Or if I'm feeling particularly good at js I could have them add and remove the components
+// literally from the page so they don't take up space as pre-existing hidden objects 
+// but i'm perfectly ok with this solution considering I havent touched js in almost 2 years and,,
+// I got the gulp and php and sass and json and everything working fine, which i consider a win lol
+// you can see why javascript is not on my list of favourite things

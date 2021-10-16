@@ -1,6 +1,8 @@
 body{
     color:$main-color;
     font-size: $main-size;
+    font-family:  Arial, Helvetica, sans-serif;
+    background-color: #999;
     text-align: center;
 }
 
@@ -8,23 +10,46 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
+    padding:0 5vw;
 }
 
 p{
     color:$body-color;
-    visibility: hidden;
 }
-
 
 img{
     width:$image-width;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.bio-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+    max-width: 250px;
+}
+
+.p-Title{
+    font-weight: 700;
+    color: $main-color;
+}
+
+.p-Description{
+    text-align: justify;
+}
+
+#header{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 5vw;
+}
+
+#team-members{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
